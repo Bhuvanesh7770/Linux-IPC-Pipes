@@ -24,6 +24,7 @@ Testing the C Program for the desired output.
 # PROGRAM:
 
 ## C Program that illustrate communication between two process using unnamed pipes using Linux API system calls
+
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -55,7 +56,7 @@ int main() {
     close(p1[0]); // Close read end of pipe1
     close(p2[1]); // Close write end of pipe2
     client(p1[1], p2[0]); 
-    
+
     wait(NULL); // Wait for child process to finish
     return 0; 
 } 
@@ -102,11 +103,10 @@ void client(int wfd, int rfd) {
 
 
 
-
-
 ## OUTPUT
 
-![Alt text](<Screenshot at 2025-11-03 15-57-20.png>)
+<img width="934" height="364" alt="image" src="https://github.com/user-attachments/assets/7e10ecf0-719d-41a4-abec-db35f975bac6" />
+
 
 ## C Program that illustrate communication between two process using named pipes using Linux API system calls
 
@@ -202,7 +202,9 @@ void client() {
 
 
 ## OUTPUT
-![Alt text](<Screenshot at 2025-11-03 16-16-39.png>)
+
+<img width="911" height="375" alt="image" src="https://github.com/user-attachments/assets/e1c8c898-7c90-4ad3-b906-be51e241ccef" />
+
 
 # RESULT:
 The program is executed successfully.
